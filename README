@@ -1,0 +1,49 @@
+Crystalfontz modification of Freescale's Community Yocto BSP
+============================================================
+
+To get the BSP you need to have `repo` installed and use it as:
+
+Install the `repo` utility:
+
+$: mkdir ~/bin
+$: curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > ~/bin/repo
+$: chmod a+x ~/bin/repo
+
+Download the BSP source:
+
+$: PATH=${PATH}:~/bin
+$: mkdir crystalfontz-yocto
+$: cd crystalfontz-yocto
+$: repo init -u https://github.com/crystalfontz/crystalfontz-yocto-bsp -b dora-cfa
+$: repo sync
+
+Once this has complete, you will have all you need. To start a build, do:
+
+$: . ./setup-environment build
+$: bitbake core-image-minimal
+
+You can use any directory to host your build.
+
+The source code will be checked out at crystalfontz-yocto/sources.
+
+Contributing (to the depended upon repos)
+-----------------------------------------
+
+To contribute to this layer you should the patches for review to the
+mailing list.
+
+Mailing list:
+
+    https://lists.yoctoproject.org/listinfo/meta-freescale
+
+Source code:
+    
+    https://github.com/Freescale/fsl-community-bsp-platform
+
+When creating patches, please use something like:
+
+git format-patch -s --subject-prefix='fsl-community-bsp-platform][PATCH' origin
+
+When sending patches, please use something like:
+
+git send-email --to meta-freescale@yoctoproject.org <generated patch>
