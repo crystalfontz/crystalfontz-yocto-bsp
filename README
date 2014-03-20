@@ -1,5 +1,5 @@
-Crystalfontz modification of Freescale's Community Yocto BSP
-============================================================
+Crystalfontz' modification of Freescale's Community Yocto BSP
+=============================================================
 
 To get the BSP you need to have `repo` installed and use it as:
 
