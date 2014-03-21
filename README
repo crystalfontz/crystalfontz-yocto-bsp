@@ -19,7 +19,7 @@ $: repo sync
 
 Once this has completed, you will have all you need. To start a build, do:
 
-$: MACHINE=cfa100xx source ./setup-environment build
+$: MACHINE=cfa100xx source ../setup-environment build
 $: bitbake core-image-minimal
 
 You can use any directory to host your build.
