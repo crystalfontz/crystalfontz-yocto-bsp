@@ -9,7 +9,7 @@
   <remote fetch="git://github.com/crystalfontz" name="cfa" />
   <remote fetch="git://github.com/woglinde/meta-java" name="java" />
   <remote fetch="git://git.yoctoproject.org/meta-mono" name="mono" />
-  <remote fetch="git://github.com/meta-qt5/meta-qt5" name="qt5" />
+  <remote fetch="git://github.com/meta-qt5" name="qt5" />
 
   <project remote="yocto" revision="dora" name="poky" path="sources/poky"/>
   <project remote="yocto" revision="dora" name="meta-fsl-arm" path="sources/meta-fsl-arm"/>
