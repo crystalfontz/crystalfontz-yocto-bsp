@@ -22,7 +22,7 @@ set up your bblayers.conf file like just below this section, and then do:
 
 $: chmod a+x setup-environment
 $: MACHINE=cfa100xx source ./setup-environment build
-$: bitbake demo-image-cfa-full
+$: time bitbake demo-image-cfa-full
 
 You can use any directory to host your build.
 
