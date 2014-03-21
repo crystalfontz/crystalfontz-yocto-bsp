@@ -25,6 +25,8 @@
 
   <project remote="yocto" revision="master" name="meta-mono" path="sources/meta-mono"/>
 
+  <project remote="cfa" revision="brian-dora-wip" name="meta-crystalfontz" path="sources/meta-crystalfontz"/>
+
   <project remote="java" revision="master" name="meta-java" path="sources/meta-java"/>
 
   <project remote="qt5" revision="dora" name="meta-qt5" path="sources/meta-qt5"/>
