@@ -17,8 +17,8 @@
   <project remote="oe" revision="dora" name="meta-openembedded" path="sources/meta-openembedded"/>
 
   <project remote="freescale" revision="dora" name="fsl-community-bsp-base" path="sources/base">
-<copyfile dest="README" src="README"/>
-<copyfile dest="setup-environment" src="setup-environment"/>
+	<copyfile dest="README" src="README"/>
+	<copyfile dest="setup-environment" src="setup-environment"/>
   </project>
 
   <project remote="cfa" revision="dora" name="meta-fsl-arm-extra" path="sources/meta-fsl-arm-extra"/>
