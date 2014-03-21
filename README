@@ -26,10 +26,42 @@ You can use any directory to host your build.
 
 The source code will be checked out at crystalfontz-yocto/sources.
 
+Your bblayers.conf file should look something like this:
+(You will need to edit in build/conf/bblayers.conf)
+-------------------------------------------------------------------------------
+LCONF_VERSION = "6"
+
+BBPATH = "${TOPDIR}"
+BSPDIR := "${@os.path.abspath(os.path.dirname(d.getVar('FILE', True)) + '/../..')}"
+
+BBFILES ?= ""
+BBLAYERS = " \
+  ${BSPDIR}/sources/poky/meta \
+  ${BSPDIR}/sources/poky/meta-yocto \
+  \
+  ${BSPDIR}/sources/meta-openembedded/meta-oe \
+  ${BSPDIR}/sources/meta-openembedded/meta-efl \
+  ${BSPDIR}/sources/meta-openembedded/meta-gnome \
+  ${BSPDIR}/sources/meta-openembedded/meta-ruby \
+  ${BSPDIR}/sources/meta-openembedded/meta-networking \
+  \
+  ${BSPDIR}/sources/meta-fsl-arm \
+  ${BSPDIR}/sources/meta-fsl-arm-extra \
+  ${BSPDIR}/sources/meta-fsl-demos \
+  \
+  ${BSPDIR}/sources/meta-crystalfontz \
+  \
+  ${BSPDIR}/sources/meta-mono \
+  ${BSPDIR}/sources/meta-java \
+  \
+  ${BSPDIR}/sources/meta-qt5 \
+  \
+"
+
 Contributing (to the depended upon repos)
 -----------------------------------------
 
-To contribute to this layer you should the patches for review to the
+To contribute to this layer you should the send patches for review to the
 mailing list.
 
 Mailing list:
