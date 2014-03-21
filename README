@@ -17,8 +17,10 @@ $: cd crystalfontz-yocto
 $: repo init -u https://github.com/crystalfontz/crystalfontz-yocto-bsp -b dora-cfa
 $: repo sync
 
+````
 Once this has completed, you will have all you need. To start a build, 
 set up your bblayers.conf file like just below this section, and then do:
+````
 
 $: chmod a+x setup-environment
 $: MACHINE=cfa100xx source ./setup-environment build
