@@ -7,8 +7,7 @@
   <remote fetch="git://github.com/Freescale" name="freescale"/>
   <remote fetch="git://git.openembedded.org" name="oe"/>
   <remote fetch="git://github.com/crystalfontz" name="cfa" />
-  <remote fetch="git://github.com/woglinde/meta-java" name="java" />
-  <remote fetch="git://git.yoctoproject.org/meta-mono" name="mono" />
+  <remote fetch="git://github.com/woglinde" name="java" />
   <remote fetch="git://github.com/meta-qt5" name="qt5" />
 
   <project remote="yocto" revision="dora" name="poky" path="sources/poky"/>
@@ -24,7 +23,7 @@
   <project remote="cfa" revision="dora" name="meta-fsl-arm-extra" path="sources/meta-fsl-arm-extra"/>
   <project remote="freescale" revision="dora" name="meta-fsl-demos" path="sources/meta-fsl-demos"/>
 
-  <project remote="mono" revision="master" name="meta-mono" path="sources/meta-mono"/>
+  <project remote="yocto" revision="master" name="meta-mono" path="sources/meta-mono"/>
 
   <project remote="java" revision="master" name="meta-java" path="sources/meta-java"/>
 
