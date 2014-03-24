@@ -20,8 +20,7 @@ $: chmod a+x setup-environment
 $: ./sync_and_patch.sh
 $: MACHINE=cfa100xx source ./setup-environment build
 
-Once this has completed, you will have all you need. To start a build, 
-set up your bblayers.conf file like just below this section, and then do:
+Once this has completed, you will have all you need. To start a build, do:
 
 $: time bitbake demo-image-cfa-full
 
