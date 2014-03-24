@@ -25,7 +25,9 @@
 
   <project remote="yocto" revision="master" name="meta-mono" path="sources/meta-mono"/>
 
-  <project remote="cfa" revision="brian-dora-wip" name="meta-crystalfontz" path="sources/meta-crystalfontz"/>
+  <project remote="cfa" revision="brian-dora-wip" name="meta-crystalfontz" path="sources/meta-crystalfontz">
+<copyfile dest="sync_and_patch.sh" src="sync_and_patch.sh"/>
+  </project>
 
   <project remote="java" revision="master" name="meta-java" path="sources/meta-java"/>
 
