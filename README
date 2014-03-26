@@ -31,7 +31,7 @@ The source code will be checked out at crystalfontz-yocto/sources.
 Upon completion of the build (go out, do something, it'll be a while), 
 your shiny new image will be ready to be burned to a microSD card.  You 
 can find it in:
-crystalfontz-yocto/build/tmp/deploy/images/cfa100xx/demo-cfa-full-cfa100xx.sdcard
+crystalfontz-yocto/build/tmp/deploy/images/cfa100xx/demo-image-cfa-full-cfa100xx.sdcard
 
 You can burn it to the microSD card using the following commandline 
 (from the build folder):
