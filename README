@@ -36,7 +36,7 @@ crystalfontz-yocto/build/tmp/deploy/images/cfa100xx/demo-cfa-full-cfa100xx.sdcar
 You can burn it to the microSD card using the following commandline 
 (from the build folder):
 
-$: sudo dd if=./tmp/deploy/images/cfa100xx/demo-image-full-cfa100xx.sdcard of=/dev/sdb
+$: sudo dd if=./tmp/deploy/images/cfa100xx/demo-image-cfa-full-cfa100xx.sdcard of=/dev/sdb
 
 ** NOTE: /dev/sdb should be replaced with the device location of your 
 microSD card in your development system **
