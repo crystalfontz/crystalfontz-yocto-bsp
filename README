@@ -16,7 +16,7 @@ $: mkdir crystalfontz-yocto
 $: cd crystalfontz-yocto
 $: repo init -u https://github.com/crystalfontz/crystalfontz-yocto-bsp -b dora-cfa
 $: repo sync
-$: ./sync_and_patch.sh
+$: source sync_and_patch.sh
 
 Once this has completed, you will have all you need. To start a build, do:
 
