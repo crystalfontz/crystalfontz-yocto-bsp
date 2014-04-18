@@ -35,9 +35,13 @@ You can burn it to the microSD card using the following commandline
 (from the build folder):
 
 $: sudo dd if=./tmp/deploy/images/cfa100xx/demo-image-cfa-full-cfa100xx.sdcard of=/dev/sdb
+$: sudo eject /dev/sdb
 
 ** NOTE: /dev/sdb should be replaced with the device location of your 
 microSD card in your development system **
+
+Remove the microSD card from the reader and insert into the microSD 
+card slot in the cfa-10036, apply power, and you're ready to start working.
 
 Contributing (to the depended upon repos)
 -----------------------------------------
