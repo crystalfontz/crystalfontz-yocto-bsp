@@ -1,6 +1,14 @@
 Crystalfontz' modification of Freescale's Community Yocto BSP
 =============================================================
 
+-----------------------------------------
+You will need to confirm you have all the required packages, 
+etc. prior to starting your build.
+
+You can find the Yocto quick start guide here:
+http://www.yoctoproject.org/docs/current/yocto-project-qs/yocto-project-qs.html
+-----------------------------------------
+
 To get the BSP you need to have `repo` installed and use it as:
 
 Install the `repo` utility:
